@@ -1,0 +1,328 @@
+
+============================================================
+Seed: 1
+============================================================
+Loading and imbalancing CIFAR-100...
+  imbalanced: (27700, 32, 32, 3), classes: 100
+
+ECOD cleaning...
+  cleaned: (26273, 32, 32, 3)
+
+Training baseline feature extractor on imbalanced data...
+  ep   1/120  loss=4.645  cls=4.033  val_acc=0.0463  (33.6s)
+  ep   2/120  loss=4.184  cls=3.720  val_acc=0.0630  (253.5s)
+  ep   3/120  loss=3.932  cls=3.558  val_acc=0.1019  (31.0s)
+  ep   4/120  loss=3.756  cls=3.427  val_acc=0.0707  (285.1s)
+  ep   5/120  loss=3.601  cls=3.288  val_acc=0.1417  (31.3s)
+  ep   6/120  loss=3.495  cls=3.175  val_acc=0.1647  (32.7s)
+  ep   7/120  loss=3.370  cls=3.031  val_acc=0.1825  (985.7s)
+  ep   8/120  loss=3.266  cls=2.896  val_acc=0.1893  (31.4s)
+  ep   9/120  loss=3.182  cls=2.780  val_acc=0.1232  (31.1s)
+  ep  10/120  loss=3.134  cls=2.701  val_acc=0.2033  (33.2s)
+  ep  11/120  loss=3.066  cls=2.603  val_acc=0.2428  (35.8s)
+  ep  12/120  loss=3.021  cls=2.529  val_acc=0.2274  (35.9s)
+  ep  13/120  loss=2.992  cls=2.468  val_acc=0.2033  (995.9s)
+  ep  14/120  loss=2.944  cls=2.390  val_acc=0.2030  (31.3s)
+  ep  15/120  loss=2.911  cls=2.330  val_acc=0.2405  (31.3s)
+  ep  16/120  loss=2.892  cls=2.282  val_acc=0.2369  (950.5s)
+  ep  17/120  loss=2.881  cls=2.245  val_acc=0.3162  (30.9s)
+  ep  18/120  loss=2.862  cls=2.201  val_acc=0.2607  (957.2s)
+  ep  19/120  loss=2.846  cls=2.161  val_acc=0.2543  (31.5s)
+  ep  20/120  loss=2.821  cls=2.116  val_acc=0.2926  (31.6s)
+  ep  21/120  loss=2.816  cls=2.092  val_acc=0.2512  (33.1s)
+  ep  22/120  loss=2.815  cls=2.072  val_acc=0.2800  (34.6s)
+  ep  23/120  loss=2.813  cls=2.052  val_acc=0.2653  (35.7s)
+  ep  24/120  loss=2.795  cls=2.018  val_acc=0.3438  (37.2s)
+  ep  25/120  loss=2.775  cls=1.986  val_acc=0.2503  (37.9s)
+  ep  26/120  loss=2.772  cls=1.970  val_acc=0.2450  (42.6s)
+  ep  27/120  loss=2.754  cls=1.942  val_acc=0.2147  (90.6s)
+  ep  28/120  loss=2.763  cls=1.940  val_acc=0.2256  (38.4s)
+  ep  29/120  loss=2.737  cls=1.904  val_acc=0.3014  (78.4s)
+  ep  30/120  loss=2.731  cls=1.891  val_acc=0.3491  (70.0s)
+  ep  31/120  loss=2.736  cls=1.888  val_acc=0.3340  (55.9s)
+  ep  32/120  loss=2.720  cls=1.868  val_acc=0.3453  (110.3s)
+  ep  33/120  loss=2.701  cls=1.845  val_acc=0.2636  (53.1s)
+  ep  34/120  loss=2.690  cls=1.828  val_acc=0.3176  (57.2s)
+  ep  35/120  loss=2.685  cls=1.816  val_acc=0.3373  (62.8s)
+  ep  36/120  loss=2.685  cls=1.812  val_acc=0.3520  (68.5s)
+  ep  37/120  loss=2.653  cls=1.778  val_acc=0.3264  (70.8s)
+  ep  38/120  loss=2.636  cls=1.763  val_acc=0.3656  (69.8s)
+  ep  39/120  loss=2.627  cls=1.754  val_acc=0.3355  (67.2s)
+  ep  40/120  loss=2.624  cls=1.747  val_acc=0.3799  (64.3s)
+  ep  41/120  loss=2.601  cls=1.721  val_acc=0.3782  (62.7s)
+  ep  42/120  loss=2.580  cls=1.700  val_acc=0.3448  (62.1s)
+  ep  43/120  loss=2.582  cls=1.699  val_acc=0.3900  (62.3s)
+  ep  44/120  loss=2.557  cls=1.673  val_acc=0.3738  (62.4s)
+  ep  45/120  loss=2.560  cls=1.678  val_acc=0.3831  (63.0s)
+  ep  46/120  loss=2.519  cls=1.635  val_acc=0.3605  (63.6s)
+  ep  47/120  loss=2.523  cls=1.637  val_acc=0.3811  (63.7s)
+  ep  48/120  loss=2.497  cls=1.613  val_acc=0.3538  (64.0s)
+  ep  49/120  loss=2.477  cls=1.596  val_acc=0.4077  (64.1s)
+  ep  50/120  loss=2.462  cls=1.584  val_acc=0.3699  (65.5s)
+  ep  51/120  loss=2.437  cls=1.564  val_acc=0.4269  (65.2s)
+  ep  52/120  loss=2.408  cls=1.537  val_acc=0.3175  (65.4s)
+  ep  53/120  loss=2.409  cls=1.538  val_acc=0.3272  (554.6s)
+  ep  54/120  loss=2.387  cls=1.520  val_acc=0.4137  (30.9s)
+  ep  55/120  loss=2.363  cls=1.499  val_acc=0.3589  (31.4s)
+  ep  56/120  loss=2.327  cls=1.465  val_acc=0.3950  (962.7s)
+  ep  57/120  loss=2.314  cls=1.457  val_acc=0.4500  (31.4s)
+  ep  58/120  loss=2.297  cls=1.444  val_acc=0.3463  (32.4s)
+  ep  59/120  loss=2.272  cls=1.425  val_acc=0.4054  (33.7s)
+  ep  60/120  loss=2.240  cls=1.397  val_acc=0.4423  (1019.6s)
+  ep  61/120  loss=2.220  cls=1.382  val_acc=0.4113  (31.2s)
+  ep  62/120  loss=2.179  cls=1.346  val_acc=0.4802  (1037.8s)
+  ep  63/120  loss=2.157  cls=1.330  val_acc=0.4284  (30.9s)
+  ep  64/120  loss=2.147  cls=1.326  val_acc=0.4055  (995.1s)
+  ep  65/120  loss=2.118  cls=1.301  val_acc=0.4718  (937.0s)
+  ep  66/120  loss=2.091  cls=1.281  val_acc=0.4659  (31.8s)
+  ep  67/120  loss=2.068  cls=1.264  val_acc=0.4554  (962.1s)
+  ep  68/120  loss=2.028  cls=1.230  val_acc=0.4740  (30.8s)
+  ep  69/120  loss=2.020  cls=1.228  val_acc=0.4711  (950.4s)
+  ep  70/120  loss=1.981  cls=1.195  val_acc=0.4619  (31.3s)
+  ep  71/120  loss=1.962  cls=1.183  val_acc=0.4602  (1002.4s)
+  ep  72/120  loss=1.924  cls=1.152  val_acc=0.4857  (31.0s)
+  ep  73/120  loss=1.886  cls=1.120  val_acc=0.4782  (215.4s)
+  ep  74/120  loss=1.851  cls=1.092  val_acc=0.5031  (982.4s)
+  ep  75/120  loss=1.828  cls=1.077  val_acc=0.4968  (31.0s)
+  ep  76/120  loss=1.802  cls=1.058  val_acc=0.4787  (863.5s)
+  ep  77/120  loss=1.761  cls=1.024  val_acc=0.5162  (31.1s)
+  ep  78/120  loss=1.728  cls=0.999  val_acc=0.4961  (71.9s)
+  ep  79/120  loss=1.700  cls=0.978  val_acc=0.5077  (31.0s)
+  ep  80/120  loss=1.668  cls=0.954  val_acc=0.4991  (327.8s)
+  ep  81/120  loss=1.638  cls=0.931  val_acc=0.5041  (31.3s)
+  ep  82/120  loss=1.613  cls=0.913  val_acc=0.5156  (931.7s)
+  ep  83/120  loss=1.572  cls=0.879  val_acc=0.5449  (752.6s)
+  ep  84/120  loss=1.540  cls=0.855  val_acc=0.5226  (33.1s)
+  ep  85/120  loss=1.511  cls=0.834  val_acc=0.5321  (31.0s)
+  ep  86/120  loss=1.481  cls=0.811  val_acc=0.5371  (31.0s)
+  ep  87/120  loss=1.440  cls=0.778  val_acc=0.5230  (31.0s)
+  ep  88/120  loss=1.413  cls=0.759  val_acc=0.5501  (30.9s)
+  ep  89/120  loss=1.369  cls=0.722  val_acc=0.5344  (31.0s)
+  ep  90/120  loss=1.358  cls=0.718  val_acc=0.5039  (31.0s)
+  ep  91/120  loss=1.315  cls=0.682  val_acc=0.5663  (31.0s)
+  ep  92/120  loss=1.290  cls=0.663  val_acc=0.5587  (31.0s)
+  ep  93/120  loss=1.273  cls=0.653  val_acc=0.5600  (31.0s)
+  ep  94/120  loss=1.233  cls=0.620  val_acc=0.5610  (31.2s)
+  ep  95/120  loss=1.204  cls=0.597  val_acc=0.5444  (31.7s)
+  ep  96/120  loss=1.174  cls=0.573  val_acc=0.5602  (32.4s)
+  ep  97/120  loss=1.152  cls=0.557  val_acc=0.5727  (32.3s)
+  ep  98/120  loss=1.124  cls=0.534  val_acc=0.5872  (31.7s)
+  ep  99/120  loss=1.111  cls=0.526  val_acc=0.5908  (32.3s)
+  ep 100/120  loss=1.087  cls=0.507  val_acc=0.5769  (32.1s)
+  ep 101/120  loss=1.059  cls=0.483  val_acc=0.5732  (32.2s)
+  ep 102/120  loss=1.033  cls=0.462  val_acc=0.5915  (32.1s)
+  ep 103/120  loss=1.019  cls=0.453  val_acc=0.5984  (32.4s)
+  ep 104/120  loss=1.003  cls=0.440  val_acc=0.5843  (32.2s)
+  ep 105/120  loss=0.984  cls=0.425  val_acc=0.5971  (32.1s)
+  ep 106/120  loss=0.962  cls=0.406  val_acc=0.5945  (32.1s)
+  ep 107/120  loss=0.957  cls=0.404  val_acc=0.5968  (32.0s)
+  ep 108/120  loss=0.938  cls=0.387  val_acc=0.6038  (32.0s)
+  ep 109/120  loss=0.925  cls=0.377  val_acc=0.6007  (31.8s)
+  ep 110/120  loss=0.920  cls=0.373  val_acc=0.6004  (31.8s)
+  ep 111/120  loss=0.900  cls=0.354  val_acc=0.6055  (31.9s)
+  ep 112/120  loss=0.901  cls=0.357  val_acc=0.6066  (31.8s)
+  ep 113/120  loss=0.895  cls=0.352  val_acc=0.6049  (31.9s)
+  ep 114/120  loss=0.882  cls=0.340  val_acc=0.6068  (31.8s)
+  ep 115/120  loss=0.883  cls=0.342  val_acc=0.6083  (31.9s)
+  ep 116/120  loss=0.886  cls=0.344  val_acc=0.6058  (32.3s)
+  ep 117/120  loss=0.878  cls=0.337  val_acc=0.6061  (31.9s)
+  ep 118/120  loss=0.878  cls=0.337  val_acc=0.6070  (31.8s)
+  ep 119/120  loss=0.873  cls=0.332  val_acc=0.6070  (31.8s)
+  ep 120/120  loss=0.875  cls=0.334  val_acc=0.6066  (31.8s)
+
+--- BASELINE ---
+  top-1 accuracy   : 0.6083
+  balanced accuracy: 0.6083
+  macro F1 (head)  : 0.647
+  macro F1 (mid)   : 0.613
+  macro F1 (tail)  : 0.544
+  head-tail F1 gap : 0.103
+  worst-class F1   : 0.093
+  worst-class acc  : 0.050
+
+Training cGAN on cleaned (imbalanced) data...
+  cGAN ep   1/60  g=1.887  d=0.821  (22.7s)
+  cGAN ep   2/60  g=1.150  d=1.186  (20.6s)
+  cGAN ep   3/60  g=1.046  d=1.226  (49.4s)
+  cGAN ep   4/60  g=1.049  d=1.216  (135.2s)
+  cGAN ep   5/60  g=0.995  d=1.243  (20.4s)
+  cGAN ep   6/60  g=0.928  d=1.290  (21.4s)
+  cGAN ep   7/60  g=0.929  d=1.281  (74.0s)
+  cGAN ep   8/60  g=0.981  d=1.226  (22.3s)
+  cGAN ep   9/60  g=1.040  d=1.202  (113.4s)
+  cGAN ep  10/60  g=1.054  d=1.229  (20.7s)
+  cGAN ep  11/60  g=0.948  d=1.274  (63.7s)
+  cGAN ep  12/60  g=0.945  d=1.280  (21.6s)
+  cGAN ep  13/60  g=0.976  d=1.258  (37.7s)
+  cGAN ep  14/60  g=1.033  d=1.209  (20.8s)
+  cGAN ep  15/60  g=1.049  d=1.219  (24.7s)
+  cGAN ep  16/60  g=1.054  d=1.210  (21.2s)
+  cGAN ep  17/60  g=1.158  d=1.166  (60.8s)
+  cGAN ep  18/60  g=1.059  d=1.202  (20.4s)
+  cGAN ep  19/60  g=1.108  d=1.190  (20.5s)
+  cGAN ep  20/60  g=1.090  d=1.179  (20.2s)
+  cGAN ep  21/60  g=1.192  d=1.151  (20.0s)
+  cGAN ep  22/60  g=1.166  d=1.166  (20.3s)
+  cGAN ep  23/60  g=1.133  d=1.163  (628.2s)
+  cGAN ep  24/60  g=1.163  d=1.159  (20.1s)
+  cGAN ep  25/60  g=1.163  d=1.162  (34.5s)
+  cGAN ep  26/60  g=1.120  d=1.172  (20.6s)
+  cGAN ep  27/60  g=1.193  d=1.172  (21.5s)
+  cGAN ep  28/60  g=1.072  d=1.207  (296.0s)
+  cGAN ep  29/60  g=1.099  d=1.199  (20.4s)
+  cGAN ep  30/60  g=1.129  d=1.187  (24.8s)
+  cGAN ep  31/60  g=1.126  d=1.173  (1033.6s)
+  cGAN ep  32/60  g=1.135  d=1.180  (20.1s)
+  cGAN ep  33/60  g=1.216  d=1.152  (20.1s)
+  cGAN ep  34/60  g=1.211  d=1.142  (21.2s)
+  cGAN ep  35/60  g=1.186  d=1.164  (21.8s)
+  cGAN ep  36/60  g=1.245  d=1.154  (22.6s)
+  cGAN ep  37/60  g=1.259  d=1.118  (23.2s)
+  cGAN ep  38/60  g=1.262  d=1.144  (51.6s)
+  cGAN ep  39/60  g=1.179  d=1.156  (21.8s)
+  cGAN ep  40/60  g=1.302  d=1.145  (23.1s)
+  cGAN ep  41/60  g=1.217  d=1.141  (24.4s)
+  cGAN ep  42/60  g=1.238  d=1.130  (40.3s)
+  cGAN ep  43/60  g=1.245  d=1.130  (473.2s)
+  cGAN ep  44/60  g=1.255  d=1.143  (20.6s)
+  cGAN ep  45/60  g=1.243  d=1.147  (20.2s)
+  cGAN ep  46/60  g=1.237  d=1.146  (24.4s)
+  cGAN ep  47/60  g=1.258  d=1.127  (636.4s)
+  cGAN ep  48/60  g=1.252  d=1.142  (20.6s)
+  cGAN ep  49/60  g=1.268  d=1.136  (20.3s)
+  cGAN ep  50/60  g=1.215  d=1.154  (88.6s)
+  cGAN ep  51/60  g=1.259  d=1.137  (20.1s)
+  cGAN ep  52/60  g=1.194  d=1.152  (80.9s)
+  cGAN ep  53/60  g=1.230  d=1.148  (20.1s)
+  cGAN ep  54/60  g=1.265  d=1.124  (21.0s)
+  cGAN ep  55/60  g=1.221  d=1.147  (22.0s)
+  cGAN ep  56/60  g=1.149  d=1.181  (22.9s)
+  cGAN ep  57/60  g=1.099  d=1.215  (24.4s)
+  cGAN ep  58/60  g=1.117  d=1.214  (60.5s)
+  cGAN ep  59/60  g=1.104  d=1.211  (63.3s)
+  cGAN ep  60/60  g=1.077  d=1.237  (24.9s)
+
+Generating 50 cGAN samples per class...
+
+Extracting features for feature-space SMOTE...
+  feature-balanced: (47500, 128)
+
+Final training set: (31273, 32, 32, 3)
+Training final classifier (full REBAL configuration)...
+  ep   1/120  loss=4.023  cls=3.442  val_acc=0.0774  (38.9s)
+  ep   2/120  loss=3.621  cls=3.210  val_acc=0.0574  (37.0s)
+  ep   3/120  loss=3.412  cls=3.096  val_acc=0.0970  (144.5s)
+  ep   4/120  loss=3.262  cls=2.993  val_acc=0.1537  (36.4s)
+  ep   5/120  loss=3.153  cls=2.898  val_acc=0.1327  (41.6s)
+  ep   6/120  loss=3.070  cls=2.812  val_acc=0.1419  (403.3s)
+  ep   7/120  loss=3.012  cls=2.741  val_acc=0.1606  (36.4s)
+  ep   8/120  loss=2.956  cls=2.668  val_acc=0.1417  (405.3s)
+  ep   9/120  loss=2.908  cls=2.599  val_acc=0.2019  (459.9s)
+  ep  10/120  loss=2.877  cls=2.547  val_acc=0.1805  (962.3s)
+  ep  11/120  loss=2.851  cls=2.499  val_acc=0.1455  (36.4s)
+  ep  12/120  loss=2.825  cls=2.452  val_acc=0.1980  (796.4s)
+  ep  13/120  loss=2.800  cls=2.408  val_acc=0.2260  (110.3s)
+  ep  14/120  loss=2.773  cls=2.363  val_acc=0.1793  (41.8s)
+  ep  15/120  loss=2.773  cls=2.341  val_acc=0.1750  (37.0s)
+  ep  16/120  loss=2.752  cls=2.300  val_acc=0.2112  (55.9s)
+  ep  17/120  loss=2.733  cls=2.261  val_acc=0.1450  (265.1s)
+  ep  18/120  loss=2.720  cls=2.228  val_acc=0.2305  (39.2s)
+  ep  19/120  loss=2.718  cls=2.208  val_acc=0.3020  (182.5s)
+  ep  20/120  loss=2.704  cls=2.178  val_acc=0.2398  (36.4s)
+  ep  21/120  loss=2.689  cls=2.146  val_acc=0.2389  (62.6s)
+  ep  22/120  loss=2.687  cls=2.127  val_acc=0.2464  (312.6s)
+  ep  23/120  loss=2.677  cls=2.101  val_acc=0.3068  (36.4s)
+  ep  24/120  loss=2.678  cls=2.090  val_acc=0.3100  (36.2s)
+  ep  25/120  loss=2.668  cls=2.066  val_acc=0.1996  (36.2s)
+  ep  26/120  loss=2.643  cls=2.031  val_acc=0.2890  (36.2s)
+  ep  27/120  loss=2.642  cls=2.017  val_acc=0.2144  (36.2s)
+  ep  28/120  loss=2.658  cls=2.018  val_acc=0.2688  (36.2s)
+  ep  29/120  loss=2.643  cls=1.992  val_acc=0.3573  (36.2s)
+  ep  30/120  loss=2.642  cls=1.983  val_acc=0.2957  (36.3s)
+  ep  31/120  loss=2.619  cls=1.952  val_acc=0.2193  (36.4s)
+  ep  32/120  loss=2.618  cls=1.946  val_acc=0.2838  (36.5s)
+  ep  33/120  loss=2.613  cls=1.935  val_acc=0.2612  (36.2s)
+  ep  34/120  loss=2.614  cls=1.929  val_acc=0.3526  (36.2s)
+  ep  35/120  loss=2.590  cls=1.902  val_acc=0.2973  (36.2s)
+  ep  36/120  loss=2.597  cls=1.904  val_acc=0.3188  (36.3s)
+  ep  37/120  loss=2.578  cls=1.877  val_acc=0.3326  (36.2s)
+  ep  38/120  loss=2.581  cls=1.875  val_acc=0.3121  (36.2s)
+  ep  39/120  loss=2.572  cls=1.863  val_acc=0.2359  (37.6s)
+  ep  40/120  loss=2.554  cls=1.842  val_acc=0.3459  (37.2s)
+  ep  41/120  loss=2.545  cls=1.827  val_acc=0.3357  (37.3s)
+  early stop (best val_acc=0.3573)
+
+Re-extracting features from final model for cRT...
+  cRT feature-balanced: (47500, 128)
+
+Retraining linear head on SMOTE-augmented features (cRT step)...
+Epoch 1/20
+93/93 - 0s - 2ms/step - accuracy: 0.1304 - loss: 4.1189
+Epoch 2/20
+93/93 - 0s - 676us/step - accuracy: 0.3469 - loss: 3.0787
+Epoch 3/20
+93/93 - 0s - 675us/step - accuracy: 0.4221 - loss: 2.6675
+Epoch 4/20
+93/93 - 0s - 674us/step - accuracy: 0.4577 - loss: 2.4526
+Epoch 5/20
+93/93 - 0s - 670us/step - accuracy: 0.4764 - loss: 2.3208
+Epoch 6/20
+93/93 - 0s - 670us/step - accuracy: 0.4889 - loss: 2.2317
+Epoch 7/20
+93/93 - 0s - 668us/step - accuracy: 0.4976 - loss: 2.1673
+Epoch 8/20
+93/93 - 0s - 673us/step - accuracy: 0.5044 - loss: 2.1187
+Epoch 9/20
+93/93 - 0s - 681us/step - accuracy: 0.5097 - loss: 2.0806
+Epoch 10/20
+93/93 - 0s - 682us/step - accuracy: 0.5151 - loss: 2.0499
+Epoch 11/20
+93/93 - 0s - 680us/step - accuracy: 0.5188 - loss: 2.0247
+Epoch 12/20
+93/93 - 0s - 690us/step - accuracy: 0.5225 - loss: 2.0036
+Epoch 13/20
+93/93 - 0s - 691us/step - accuracy: 0.5251 - loss: 1.9857
+Epoch 14/20
+93/93 - 0s - 682us/step - accuracy: 0.5289 - loss: 1.9703
+Epoch 15/20
+93/93 - 0s - 681us/step - accuracy: 0.5320 - loss: 1.9568
+Epoch 16/20
+93/93 - 0s - 680us/step - accuracy: 0.5343 - loss: 1.9450
+Epoch 17/20
+93/93 - 0s - 684us/step - accuracy: 0.5366 - loss: 1.9346
+Epoch 18/20
+93/93 - 0s - 682us/step - accuracy: 0.5383 - loss: 1.9252
+Epoch 19/20
+93/93 - 0s - 692us/step - accuracy: 0.5401 - loss: 1.9168
+Epoch 20/20
+93/93 - 0s - 695us/step - accuracy: 0.5416 - loss: 1.9092
+
+--- FINAL + cRT (linear head on SMOTE features) ---
+  top-1 accuracy   : 0.4270
+  balanced accuracy: 0.4270
+  macro F1 (head)  : 0.422
+  macro F1 (mid)   : 0.420
+  macro F1 (tail)  : 0.407
+  head-tail F1 gap : 0.014
+  worst-class F1   : 0.054
+  worst-class acc  : 0.030
+
+--- FINAL (full REBAL) ---
+  top-1 accuracy   : 0.3573
+  balanced accuracy: 0.3573
+  macro F1 (head)  : 0.366
+  macro F1 (mid)   : 0.322
+  macro F1 (tail)  : 0.321
+  head-tail F1 gap : 0.045
+  worst-class F1   : 0.000
+  worst-class acc  : 0.000
+
+=== SUMMARY ===
+  baseline    top-1: 0.6083   BAcc: 0.6083   tail F1: 0.544   head-tail gap: 0.103   worst-acc: 0.050
+  final REBAL top-1: 0.3573   BAcc: 0.3573   tail F1: 0.321   head-tail gap: 0.045   worst-acc: 0.000
+  REBAL + cRT top-1: 0.4270   BAcc: 0.4270   tail F1: 0.407   head-tail gap: 0.014   worst-acc: 0.030
+
+Total runtime: 526.6 min
+Wrote experiments/phase2_multiseed/seed_1/per_class_f1.csv
+Wrote experiments/phase2_multiseed/seed_1/metrics.json
+Wrote checkpoints to experiments/phase2_multiseed/seed_1/checkpoints/
