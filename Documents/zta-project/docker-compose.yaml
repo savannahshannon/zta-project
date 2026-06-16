@@ -1,0 +1,18 @@
+services:
+  app:
+    image: nginx:alpine
+    volumes:
+      - ./index.html:/usr/share/nginx/html/index.html
+      - ./default.conf:/etc/nginx/conf.d/default.conf:ro
+    # Note: No ports mapped! The app is hidden from the public.
+
+  proxy:
+    image: quay.io/oauth2-proxy/oauth2-proxy:latest
+    ports:
+      - "4180:4180"
+    volumes:
+      - ./oauth2-proxy.cfg:/etc/oauth2-proxy.cfg
+    command: >
+      --config /etc/oauth2-proxy.cfg
+    depends_on:
+      - app
